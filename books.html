@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="books.css">
+    <title>My Book Library</title>
+  </head>
+  <body>
+    <!-- زر إضافة كتاب جديد -->
+    <button id="btn-add-book">+ Add New Book</button>
+    
+    <form id="form-add-book" style="display: none;">
+      <label for="book-title">Title:</label>
+      <input type="text" id="book-title" placeholder="Enter book title">
+
+      <label for="book-author">Author:</label>
+      <input type="text" id="book-author" placeholder="Enter author name">
+
+      <label for="book-pages">Pages:</label>
+      <input type="number" id="book-pages" placeholder="Number of pages">
+
+      <label for="book-read">Read:</label>
+      <input type="checkbox" id="book-read">
+
+      <input type="submit" value="Add Book">
+    </form>
+
+    <div id="library"></div>
+
+    <script src="books.js"></script>
+  </body>
+</html>
